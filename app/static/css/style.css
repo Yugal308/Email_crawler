@@ -1,0 +1,99 @@
+body {
+    /* Use a subtle gradient background */
+    background: linear-gradient to right, #f8f9fa, #e9ecef;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack content and footer */
+}
+
+/* Style for the main content area to push footer down */
+.container.mt-5 {
+    flex-grow: 1;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px; /* Add subtle letter spacing */
+}
+
+.card {
+    border: none;
+    border-radius: 1rem; /* Slightly more rounded corners */
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1); /* Softer, larger shadow */
+    overflow: hidden; /* Ensure rounded corners clip content */
+}
+
+.card-header {
+    background-color: #28a745; /* Bootstrap success color */
+    color: white;
+    text-align: center;
+    padding: 2rem; /* Increased padding */
+    /* Add a subtle background pattern or gradient to header */
+    background: linear-gradient(45deg, #28a745, #34d361);
+    border-bottom: none; /* Remove default border */
+}
+
+.card-header h3 {
+    margin-bottom: 0;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1); /* Add subtle text shadow */
+}
+
+.card-body {
+    padding: 2.5rem; /* Increased padding */
+}
+
+.form-text {
+    font-size: 0.875em; /* Standardize help text size */
+    color: #6c757d; /* Muted color */
+    margin-top: 0.5rem;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: all 0.3s ease;
+    font-weight: 600; /* Bolder text */
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: translateY(-3px); /* Slightly more pronounced lift */
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.4); /* Stronger shadow on hover */
+}
+
+.progress {
+     height: 1rem; /* Make progress bar slightly taller */
+     border-radius: 0.5rem;
+     background-color: #e9ecef; /* Lighter background for track */
+}
+
+.progress-bar {
+    background-color: #17a2b8; /* Keep info color */
+    border-radius: 0.5rem;
+     transition: width 0.5s ease-in-out; /* Smooth width transition */
+}
+
+#status {
+    min-height: 1.5rem;
+    color: #343a40; /* Darker text for status */
+}
+
+code {
+    color: #d63384; /* Slightly adjusted code highlight color */
+    background-color: #f8f9fa; /* Subtle background for code */
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
+}
+
+.footer {
+    background-color: #f1f3f5; /* Lighter footer background */
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.form-control-lg {
+    height: calc(1.5em + 1rem + 2px);
+} 
