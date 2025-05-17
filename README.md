@@ -93,12 +93,6 @@ Before running this project, ensure you have the following installed:
 5.  Once processing is complete, a results CSV file (`results.csv`) will be automatically downloaded by your browser.
 6.  The downloaded CSV will include the original website names and links, plus new columns for "emails" and "phone numbers" found on each site, separated by semicolons.
 
-## Important Notes
-
-*   **Crawling can be slow:** Depending on the number of websites and the depth of crawling, the process can take a significant amount of time. The current implementation crawls the initial page and linked pages *on the same domain*.
-*   **Error Handling:** Basic error handling for file uploads and individual website crawling is included. Errors during crawling a specific site will be noted in the "error" column of the output CSV.
-*   **Resource Usage:** Crawling uses system resources (CPU, RAM) and bandwidth. Running many websites concurrently might impact performance.
-*   **Website Variability:** Website structures vary greatly. While the crawler uses regex and looks at standard link types, it may not find all contacts on every site, especially if they are embedded in images, dynamic content, or unconventional formats.
 
 ## Development
 
@@ -108,10 +102,3 @@ If you want to modify the crawler logic (e.g., change regex patterns, adjust cra
 # Stop the server (Ctrl+C)
 # python run.py
 ```
-
----
-
-This README provides a good starting point. You can expand on it by adding sections for:
-*   Troubleshooting common errors (like ChromeDriver issues).
-*   Future improvements or features.
-*   Licensing information.
